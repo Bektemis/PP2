@@ -1,10 +1,4 @@
-import re
-def text_match(text):
-        patterns = '^ab*$'
-        if re.search(patterns,  text):
-                return 'Correct!'
-        else:
-                return('Incorrect!')
-
-text=input()
-print(text_match(text))
+from datetime import date, timedelta
+dt = date.today() - timedelta(days=5)
+print('Current Date :',date.today())
+print('5 days before Current Date :',dt)
